@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    <center>
+        <h1>ARRAY</h1>
+        <p>COLLECTIONS OF DATA</p>
+    </center>
+    <hr>
+    <h2>BY ARRAY LITERAL</h2>
+    <hr>
+    <script>
+        let fruits = ["Apple","Banana","Mango","Orange","Papaya",1000];
+        document.write(typeof(fruits)+"<br>");
+        document.write(fruits +"<br>");
+
+        document.write("<br><hr>");  //JS EMBEDDED HTML CODE
+        document.write("Fruits Length =", fruits.length +"<br>");
+        document.write("First Index Value =", fruits[0]+"<br>");
+        document.write("Second Index Value =", fruits[1] + "<br>");
+        document.write("<hr>");
+
+        for (let index = 0; index < fruits.length; index++) {
+            document.write(fruits[index] + "<br>");      
+        }
+        
+    </script>
+
+    <hr>
+    <center>
+        <h1>BY CREATING INSTANCE OF ARRAY OBJECT OR CONSTRUCTOR DIRECTLY (USING NEW KEYWORD)</h1>
+    </center>
+    <hr>
+    <script>
+        let empname = new Array();
+        document.write("empname =",typeof(empname));//if we use console.log it will give out[ut in console]
+        empname[0] = "Nagashayan";
+        empname[1] = "Varuni";
+        empname[2] = "shayan";
+        empname[3] = "Naga";
+        empname[4] = "Naveeen";
+        empname[5] = "Ram";
+        empname[6] = "Prithvi";
+        empname[7] = "Ravi";
+
+        for (let index = 0; index < empname.length; index++) {
+            document.write(empname[index] + "<br>");      
+        }
+    </script>
+
+<hr>
+<center>
+    <h1>BY USING AN ARRAY OBJECT  CONSTRUCTOR PARAMETER (USING NEW KEYWORD)</h1>
+</center>
+<hr>
+
+<script>
+    let studentinfo = new Array("AK","PK","KHAKE","SQKE");
+    for (let index = 0; index < studentinfo.length; index++) {
+            document.write(studentinfo[index] + "<br>");      
+        }
+        </script>
+</body>
+</html>

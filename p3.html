@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+<body>
+    <center>
+        <h1>ARRAY METHODS</h1>
+    </center>
+    <hr>
+    <h2>REMOVING ELEMENTS INTO AN ARRAY</h2>
+    <hr>
+    <script>
+        document.write("<h4>ARRAY.....!!!</h4>");
+        let colors = ["Red","Green","Blue"];
+        document.write("ARRAY =",colors + "<br>");
+        document.write("Array Length =", colors.length +"<br><hr>");
+        
+        document.write("<h4>REMOVING  ELEMENT AT THE FIRST</h4>");
+        //colors.shift();
+        //document.write("ARRAY =",colors + "<br>");
+        //document.write("Array Length =", colors.length +"<br><hr>");
+        let first= colors.shift();
+        document.write("ARRAY =",first  + "<br>");
+        document.write("Array Length =", colors.length +"<br>");
+
+        document.write("<h4>REMOVING ELEMENT AT THE END</h4>");
+        let last= colors.pop();
+        document.write("ARRAY =",last  + "<br>");
+        document.write("Array Length =", colors.length +"<br>");
+    </script>
+</body>
+</html>
